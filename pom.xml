@@ -39,7 +39,11 @@
           <version>${org.springframework.version}</version>
       </dependency>
 
-
+      <dependency>
+          <groupId>org.springframework.data</groupId>
+          <artifactId>spring-data-jpa</artifactId>
+          <version>1.1.0.RELEASE</version>
+      </dependency>
 
 
       <!-- Hibernate -->
@@ -50,6 +54,11 @@
           <version>${hibernate.version}</version>
       </dependency>
 
+      <dependency>
+          <groupId>org.hibernate</groupId>
+          <artifactId>hibernate-envers</artifactId>
+          <version>${hibernate.version}</version>
+      </dependency>
       <!-- MySQL -->
 
       <dependency>
