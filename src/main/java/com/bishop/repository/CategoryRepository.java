@@ -25,17 +25,4 @@ public interface CategoryRepository extends CrudRepository<Category, Integer> {
      * @return category
      */
     Category findByName(String name);
-
-    /**
-     * get subcategories
-     * @param
-     * @return list of categories
-     */
-    List<Category> getSubCategories();
-
-    /**
-     * get parent categories
-     * @return list of categories
-     */
-    List<Category> getParentCategory();
 }
