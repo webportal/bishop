@@ -43,19 +43,4 @@ public class CategoryServiceImpl implements CategoryService {
     public Category findByName(String name) {
         return categoryRepository.findByName(name);
     }
-
-    @Override
-    public List<Category> getRootCategories() {
-        return categoryRepository.getRootCategories();
-    }
-
-    @Override
-    public List<Category> getSubCategories() {
-        return new ArrayList<>();
-    }
-
-    @Override
-    public List<Category> getParentCategory() {
-        return new ArrayList<>();
-    }
 }

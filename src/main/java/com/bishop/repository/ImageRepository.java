@@ -12,9 +12,5 @@ import java.util.List;
 
 public interface ImageRepository extends CrudRepository<Image, Integer> {
 
-    /**
-     * get all images for given item
-     * @return list of images
-     */
-    List<Image> getImagesForItem();
+
 }

@@ -14,12 +14,6 @@ import java.util.Set;
 public interface CategoryRepository extends CrudRepository<Category, Integer> {
 
     /**
-     * get root categories
-     * @return
-     */
-    List<Category> getRootCategories();
-
-    /**
      * find by name
      * @param name
      * @return category

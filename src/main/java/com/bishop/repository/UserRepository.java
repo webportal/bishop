@@ -3,6 +3,8 @@ package com.bishop.repository;
 import com.bishop.domain.User;
 import org.springframework.data.repository.CrudRepository;
 
+import java.util.List;
+
 /**
  * User: dmytro
  * Date: 10/7/12
@@ -16,5 +18,7 @@ public interface UserRepository extends CrudRepository<User, Integer> {
      * @param name
      * @return user
      */
-    User findByName(String name);
+    User findByFirstName(String name);
+
+    List<User> findAll();
 }

@@ -13,9 +13,5 @@ import java.util.List;
  */
 public interface OrderRepository extends CrudRepository<Order, Integer> {
 
-    /**
-     * get all orders for given user
-     * @return list of orders
-     */
-    List<Order> getAllOrderForUser();
+
 }

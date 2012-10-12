@@ -35,8 +35,4 @@ public class PurchaseServiceImpl implements PurchaseService {
         purchaseRepository.delete(purchase);
     }
 
-    @Override
-    public List<Purchase> getAllPurchasesForUser() {
-        return purchaseRepository.getAllPurchasesForUser();
-    }
 }

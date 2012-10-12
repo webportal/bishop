@@ -36,11 +36,14 @@ public interface UserService {
      * @param name
      * @return user
      */
-    User findByName(String name);
+    User findByFirstName(String name);
+
 
     /**
      * get all users
-     * @return list of users
+      * @return List<User>
      */
-    List<User> getAllUsers();
+
+    List<User> findAll();
+
 }

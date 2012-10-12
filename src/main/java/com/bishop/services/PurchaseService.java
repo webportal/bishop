@@ -22,9 +22,4 @@ public interface PurchaseService {
      */
     void deletePurchase(Purchase purchase);
 
-    /**
-     * get all purchases for given user
-     * @return list of purchases
-     */
-    List<Purchase> getAllPurchasesForUser();
 }

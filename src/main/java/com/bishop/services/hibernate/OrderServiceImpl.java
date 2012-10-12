@@ -40,8 +40,4 @@ public class OrderServiceImpl implements OrderService {
         return orderRepository.findOne(id);
     }
 
-    @Override
-    public List<Order> getAllOrderForUser() {
-        return orderRepository.getAllOrderForUser();
-    }
 }

@@ -40,8 +40,4 @@ public class ImageServiceImpl implements ImageService {
         return imageRepository.findOne(id);
     }
 
-    @Override
-    public List<Image> getImagesForItem() {
-        return imageRepository.getImagesForItem();
-    }
 }

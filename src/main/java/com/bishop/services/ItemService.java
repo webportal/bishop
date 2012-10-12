@@ -34,11 +34,6 @@ public interface ItemService {
      * @param name
      * @return item
      */
-    Item findByName(String name);
+    Item findByTitle(String name);
 
-    /**
-     * get owner of this item
-     * @return user
-     */
-    User getOwnerOfThisItem();
 }

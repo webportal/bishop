@@ -29,10 +29,4 @@ public interface ImageService {
      * @return image
      */
     Image findById(int id);
-
-    /**
-     * get all images for given item
-     * @return list of images
-     */
-    List<Image> getImagesForItem();
 }

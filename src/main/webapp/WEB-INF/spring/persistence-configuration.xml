@@ -9,7 +9,9 @@
 
 
 
-    <!--<context:component-scan base-package="com.bishop.services"/>-->
+    <context:component-scan base-package="com.bishop.services"/>
+    <context:component-scan base-package="com.bishop.managedBeans"/>
+
 
 
     <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"
@@ -73,6 +75,6 @@
         <property name="entityManagerFactory" ref="sessionFactory"/>
     </bean>
 
-    <!--<jpa:repositories base-package="com.bishop.repository" entity-manager-factory-ref="sessionFactory" transaction-manager-ref="transactionManager"/>-->
+    <jpa:repositories base-package="com.bishop.repository" entity-manager-factory-ref="sessionFactory" transaction-manager-ref="transactionManager"/>
 
 </beans>

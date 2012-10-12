@@ -13,9 +13,5 @@ import java.util.List;
  */
 public interface PurchaseRepository extends CrudRepository<Purchase, Integer> {
 
-    /**
-     * get all purchases for given user
-     * @return list of purchases
-     */
-    List<Purchase> getAllPurchasesForUser();
+
 }

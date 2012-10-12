@@ -10,7 +10,24 @@
 </h:head>
 <h:body>
 
+    <h:form>
+        <p:dataTable var="u" value="#{userManagedBean.users}">
+            <p:column headerText="First Name">
+                <h:outputText value="#{u.firstName}" />
+            </p:column>
 
+            <p:column headerText="Last Name">
+                <h:outputText value="#{u.lastName}" />
+            </p:column>
 
+            <p:column headerText="Date Birth">
+                <h:outputText value="#{u.dateBirth}" />
+            </p:column>
+
+            <p:column headerText="Visited">
+                <h:outputText value="#{u.lastVisit}" />
+            </p:column>
+        </p:dataTable>
+    </h:form>
 </h:body>
 </html>

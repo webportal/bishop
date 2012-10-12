@@ -30,9 +30,4 @@ public interface OrderService {
      */
     Order findById(int id);
 
-    /**
-     * get all orders for given user
-     * @return list of orders
-     */
-    List<Order> getAllOrderForUser();
 }

@@ -39,12 +39,7 @@ public class ItemServiceImpl implements ItemService {
     }
 
     @Override
-    public Item findByName(String name) {
-        return itemRepository.findByName(name);
-    }
-
-    @Override
-    public User getOwnerOfThisItem() {
-        return itemRepository.getOwnerOfThisItem();
+    public Item findByTitle(String name) {
+        return itemRepository.findByTitle(name);
     }
 }

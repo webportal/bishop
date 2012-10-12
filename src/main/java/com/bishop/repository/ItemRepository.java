@@ -17,11 +17,6 @@ public interface ItemRepository extends CrudRepository<Item, Integer>{
      * @param name
      * @return item
      */
-    Item findByName(String name);
+    Item findByTitle(String name);
 
-    /**
-     * get owner of this item
-     * @return user
-     */
-    User getOwnerOfThisItem();
 }
