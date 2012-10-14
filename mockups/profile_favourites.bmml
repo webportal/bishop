@@ -1,0 +1,102 @@
+<mockup version="1.0" skin="sketch" measuredW="1551" measuredH="795">
+  <controls>
+    <control controlID="48" controlTypeID="com.balsamiq.mockups::Canvas" x="425" y="715" w="1116" h="70" measuredW="100" measuredH="70" zOrder="8" locked="true" isInGroup="-1"/>
+    <control controlID="50" controlTypeID="com.balsamiq.mockups::Image" x="604" y="124" w="786" h="55" measuredW="827" measuredH="58" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>../../../../../Documents/PrintScreen%2520Files/ScreenShot034.jpg</src>
+      </controlProperties>
+    </control>
+    <control controlID="51" controlTypeID="com.balsamiq.mockups::Canvas" x="425" y="232" w="1116" h="483" measuredW="100" measuredH="70" zOrder="0" locked="true" isInGroup="-1"/>
+    <control controlID="41" controlTypeID="__group__" x="449" y="279" w="-1" h="-1" measuredW="605" measuredH="381" zOrder="1" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="23" controlTypeID="com.balsamiq.mockups::Image" x="0" y="0" w="128" h="128" measuredW="128" measuredH="128" zOrder="0" locked="false" isInGroup="41">
+          <controlProperties>
+            <src>../src/main/webapp/resources/images/surfing_girl.png</src>
+          </controlProperties>
+        </control>
+        <control controlID="28" controlTypeID="com.balsamiq.mockups::Image" x="225" y="63" w="79" h="81" measuredW="128" measuredH="128" zOrder="1" locked="false" isInGroup="41">
+          <controlProperties>
+            <src>../src/main/webapp/resources/images/hdd_apple.png</src>
+          </controlProperties>
+        </control>
+        <control controlID="31" controlTypeID="com.balsamiq.mockups::Image" x="225" y="170" w="79" h="81" measuredW="128" measuredH="128" zOrder="2" locked="false" isInGroup="41">
+          <controlProperties>
+            <src>../src/main/webapp/resources/images/hdd_externe.png</src>
+          </controlProperties>
+        </control>
+        <control controlID="32" controlTypeID="com.balsamiq.mockups::Image" x="225" y="277" w="79" h="81" measuredW="128" measuredH="128" zOrder="3" locked="false" isInGroup="41">
+          <controlProperties>
+            <src>../src/main/webapp/resources/images/hdd_window_s.png</src>
+          </controlProperties>
+        </control>
+        <control controlID="33" controlTypeID="com.balsamiq.mockups::TextArea" x="333" y="55" w="272" h="95" measuredW="200" measuredH="140" zOrder="4" locked="false" isInGroup="41">
+          <controlProperties>
+            <text>Descriptiomn</text>
+          </controlProperties>
+        </control>
+        <control controlID="34" controlTypeID="com.balsamiq.mockups::TextArea" x="333" y="170" w="272" h="95" measuredW="200" measuredH="140" zOrder="5" locked="false" isInGroup="41">
+          <controlProperties>
+            <text>Descriptiomn</text>
+          </controlProperties>
+        </control>
+        <control controlID="35" controlTypeID="com.balsamiq.mockups::TextArea" x="333" y="286" w="272" h="95" measuredW="200" measuredH="140" zOrder="6" locked="false" isInGroup="41">
+          <controlProperties>
+            <text>Descriptiomn</text>
+          </controlProperties>
+        </control>
+        <control controlID="36" controlTypeID="com.balsamiq.mockups::Button" x="6" y="150" w="113" h="-1" measuredW="113" measuredH="28" zOrder="7" locked="false" isInGroup="41">
+          <controlProperties>
+            <href>profile_favourites.bmml</href>
+            <text>My%20Favourites</text>
+          </controlProperties>
+        </control>
+        <control controlID="37" controlTypeID="com.balsamiq.mockups::Button" x="6" y="183" w="115" h="-1" measuredW="115" measuredH="28" zOrder="8" locked="false" isInGroup="41">
+          <controlProperties>
+            <text>My%20Purchases%20</text>
+          </controlProperties>
+        </control>
+        <control controlID="38" controlTypeID="com.balsamiq.mockups::Button" x="6" y="219" w="111" h="-1" measuredW="111" measuredH="28" zOrder="9" locked="false" isInGroup="41">
+          <controlProperties>
+            <text>Edit%20my%20info%20%20</text>
+          </controlProperties>
+        </control>
+        <control controlID="39" controlTypeID="com.balsamiq.mockups::Button" x="6" y="256" w="112" h="-1" measuredW="112" measuredH="28" zOrder="10" locked="false" isInGroup="41">
+          <controlProperties>
+            <text>My%20Items%20%20%20%20%20</text>
+          </controlProperties>
+        </control>
+        <control controlID="40" controlTypeID="com.balsamiq.mockups::Button" x="6" y="293" w="108" h="-1" measuredW="108" measuredH="28" zOrder="11" locked="false" isInGroup="41">
+          <controlProperties>
+            <text>Add%20item%20%20%20%20%20</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::Canvas" x="425" y="26" w="1116" h="202" measuredW="100" measuredH="70" zOrder="2" locked="true" isInGroup="-1"/>
+    <control controlID="43" controlTypeID="com.balsamiq.mockups::LinkBar" x="692" y="71" w="-1" h="-1" measuredW="120" measuredH="25" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Home%2CAbout%20Us</text>
+      </controlProperties>
+    </control>
+    <control controlID="44" controlTypeID="com.balsamiq.mockups::Image" x="461" y="63" w="-1" h="-1" measuredW="128" measuredH="128" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>../src/main/webapp/resources/images/gnome_chess.png</src>
+      </controlProperties>
+    </control>
+    <control controlID="45" controlTypeID="com.balsamiq.mockups::LinkBar" x="848" y="70" w="-1" h="-1" measuredW="118" measuredH="25" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Log%20out%2C%20Profile</text>
+      </controlProperties>
+    </control>
+    <control controlID="46" controlTypeID="com.balsamiq.mockups::ComboBox" x="1009" y="70" w="-1" h="-1" measuredW="60" measuredH="25" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Lang</text>
+      </controlProperties>
+    </control>
+    <control controlID="47" controlTypeID="com.balsamiq.mockups::Image" x="1390" y="87" w="-1" h="-1" measuredW="128" measuredH="128" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>../src/main/webapp/resources/images/shopping_trolley.png</src>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
