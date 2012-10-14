@@ -10,7 +10,7 @@
         <src>../src/main/webapp/resources/images/gnome_chess.png</src>
       </controlProperties>
     </control>
-    <control controlID="2" controlTypeID="com.balsamiq.mockups::LinkBar" x="1220" y="68" w="-1" h="-1" measuredW="83" measuredH="25" zOrder="2" locked="false" isInGroup="-1">
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::LinkBar" x="1220" y="68" w="-1" h="-1" measuredW="84" measuredH="25" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Log%20in</text>
       </controlProperties>
@@ -18,21 +18,6 @@
     <control controlID="3" controlTypeID="com.balsamiq.mockups::SearchBox" x="608" y="155" w="590" h="-1" measuredW="94" measuredH="25" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
         <text>search</text>
-      </controlProperties>
-    </control>
-    <control controlID="72" controlTypeID="com.balsamiq.mockups::CoverFlow" x="636" y="360" w="-1" h="-1" measuredW="493" measuredH="198" zOrder="8" locked="false" isInGroup="-1">
-      <controlProperties>
-        <src>../src/main/webapp/resources/images/flowers/messenger.png</src>
-      </controlProperties>
-    </control>
-    <control controlID="73" controlTypeID="com.balsamiq.mockups::Button" x="832" y="653" w="-1" h="-1" measuredW="99" measuredH="28" zOrder="9" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Add%20to%20cart</text>
-      </controlProperties>
-    </control>
-    <control controlID="15" controlTypeID="com.balsamiq.mockups::Image" x="606" y="206" w="58" h="56" measuredW="128" measuredH="128" zOrder="4" locked="false" isInGroup="-1">
-      <controlProperties>
-        <src>../src/main/webapp/resources/images/flowers/purple_flower.png</src>
       </controlProperties>
     </control>
     <control controlID="22" controlTypeID="com.balsamiq.mockups::ComboBox" x="1243" y="23" w="-1" h="-1" measuredW="60" measuredH="25" zOrder="5" locked="false" isInGroup="-1">
@@ -45,10 +30,25 @@
         <src>../src/main/webapp/resources/images/shopping_trolley.png</src>
       </controlProperties>
     </control>
+    <control controlID="72" controlTypeID="com.balsamiq.mockups::CoverFlow" x="636" y="360" w="-1" h="-1" measuredW="493" measuredH="198" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>../src/main/webapp/resources/images/flowers/messenger.png</src>
+      </controlProperties>
+    </control>
+    <control controlID="73" controlTypeID="com.balsamiq.mockups::Button" x="832" y="653" w="-1" h="-1" measuredW="99" measuredH="28" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Add%20to%20cart</text>
+      </controlProperties>
+    </control>
     <control controlID="24" controlTypeID="com.balsamiq.mockups::Image" x="529" y="206" w="56" h="57" measuredW="128" measuredH="128" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
         <href>main.bmml</href>
         <src>../src/main/webapp/resources/images/flowers/white_flower.png</src>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Image" x="606" y="206" w="58" h="56" measuredW="128" measuredH="128" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>../src/main/webapp/resources/images/flowers/purple_flower.png</src>
       </controlProperties>
     </control>
   </controls>

@@ -10,7 +10,7 @@
         <src>../src/main/webapp/resources/images/gnome_chess.png</src>
       </controlProperties>
     </control>
-    <control controlID="2" controlTypeID="com.balsamiq.mockups::LinkBar" x="1220" y="68" w="-1" h="-1" measuredW="83" measuredH="25" zOrder="2" locked="false" isInGroup="-1">
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::LinkBar" x="1220" y="68" w="-1" h="-1" measuredW="84" measuredH="25" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Log%20in</text>
       </controlProperties>
