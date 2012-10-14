@@ -6,43 +6,25 @@
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:p="http://primefaces.org/ui" xmlns:ui="http://java.sun.com/jsf/facelets">
 <h:head>
-
+<h:outputStylesheet library="css" value="stylesheet.css"/>
 </h:head>
 <h:body>
 
-    <p:layout fullPage="true">
+    <p:layout style="min-height:1000px;width:60%;margin:0 auto;">
 
-        <p:layoutUnit position="north" size="100">
-            <p:layout style="min-width:400px;min-height:200px;" id="layout" styleClass="styles/stylesheet.css">
-                <p:layoutUnit position="west" resizable="true" size="100" minSize="40">
-
-                </p:layoutUnit>
-
-                <p:layoutUnit position="center" >
-
-                </p:layoutUnit>
-
-                <p:layoutUnit position="east">
-                   <h:outputLink value="http://google.com">Log in</h:outputLink>
-                </p:layoutUnit>
-            </p:layout>
+        <p:layoutUnit position="north" size="200">
+          <h:outputText value="header goes here"/>
         </p:layoutUnit>
 
         <p:layoutUnit position="south" size="100">
 
         </p:layoutUnit>
 
-        <p:layoutUnit position="west" size="200">
 
-        </p:layoutUnit>
 
-        <p:layoutUnit position="east" size="200">
-
-        </p:layoutUnit>
-
-        <p:layoutUnit position="center">
+        <p:layoutUnit position="center" size="500">
           <ui:insert name="content">
-
+                 Content is here
           </ui:insert>
         </p:layoutUnit>
 
