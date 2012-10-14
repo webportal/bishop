@@ -1,0 +1,106 @@
+<mockup version="1.0" skin="sketch" measuredW="1489" measuredH="579">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::LinkBar" x="728" y="69" w="-1" h="-1" measuredW="120" measuredH="25" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Home%2CAbout%20Us</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="508" y="12" w="-1" h="-1" measuredW="128" measuredH="128" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>../src/main/webapp/resources/images/gnome_chess.png</src>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::LinkBar" x="1201" y="68" w="-1" h="-1" measuredW="117" measuredH="25" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Log%20out%2C%20Profile</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::SearchBox" x="696" y="109" w="295" h="-1" measuredW="94" measuredH="25" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>search</text>
+      </controlProperties>
+    </control>
+    <control controlID="36" controlTypeID="com.balsamiq.mockups::Label" x="753" y="355" w="84" h="25" measuredW="74" measuredH="25" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Description</text>
+      </controlProperties>
+    </control>
+    <control controlID="37" controlTypeID="com.balsamiq.mockups::TextInput" x="890" y="352" w="-1" h="-1" measuredW="77" measuredH="29" zOrder="15" locked="false" isInGroup="-1"/>
+    <control controlID="38" controlTypeID="com.balsamiq.mockups::Label" x="738" y="264" w="110" h="25" measuredW="81" measuredH="25" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Add%20an%20item</text>
+      </controlProperties>
+    </control>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::Label" x="753" y="391" w="84" h="25" measuredW="60" measuredH="25" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Category</text>
+      </controlProperties>
+    </control>
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::Button" x="537" y="454" w="-1" h="-1" measuredW="108" measuredH="28" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Add%20item%20%20%20%20%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="34" controlTypeID="com.balsamiq.mockups::TextInput" x="890" y="319" w="-1" h="-1" measuredW="77" measuredH="29" zOrder="12" locked="false" isInGroup="-1"/>
+    <control controlID="35" controlTypeID="com.balsamiq.mockups::Label" x="753" y="322" w="69" h="25" measuredW="39" measuredH="25" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Name</text>
+      </controlProperties>
+    </control>
+    <control controlID="40" controlTypeID="com.balsamiq.mockups::ComboBox" x="889" y="391" w="-1" h="-1" measuredW="61" measuredH="72" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Auto%0AService%0AAnimals</text>
+      </controlProperties>
+    </control>
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::Label" x="753" y="482" w="84" h="25" measuredW="75" measuredH="25" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Add%20photos</text>
+      </controlProperties>
+    </control>
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::Label" x="753" y="544" w="84" h="25" measuredW="37" measuredH="25" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Price</text>
+      </controlProperties>
+    </control>
+    <control controlID="43" controlTypeID="com.balsamiq.mockups::Label" x="890" y="543" w="84" h="25" measuredW="30" measuredH="25" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>100</text>
+      </controlProperties>
+    </control>
+    <control controlID="22" controlTypeID="com.balsamiq.mockups::ComboBox" x="1243" y="23" w="-1" h="-1" measuredW="60" measuredH="25" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Lang</text>
+      </controlProperties>
+    </control>
+    <control controlID="23" controlTypeID="com.balsamiq.mockups::Image" x="515" y="178" w="-1" h="-1" measuredW="128" measuredH="128" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>../src/main/webapp/resources/images/surfing_girl.png</src>
+      </controlProperties>
+    </control>
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::Image" x="1351" y="17" w="-1" h="-1" measuredW="128" measuredH="128" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>../src/main/webapp/resources/images/shopping_trolley.png</src>
+      </controlProperties>
+    </control>
+    <control controlID="28" controlTypeID="com.balsamiq.mockups::Button" x="537" y="319" w="-1" h="-1" measuredW="113" measuredH="28" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>My%20Favourites</text>
+      </controlProperties>
+    </control>
+    <control controlID="29" controlTypeID="com.balsamiq.mockups::Button" x="537" y="354" w="-1" h="-1" measuredW="115" measuredH="28" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>My%20Purchases%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="30" controlTypeID="com.balsamiq.mockups::Button" x="537" y="390" w="-1" h="-1" measuredW="111" measuredH="28" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Edit%20my%20info%20%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="31" controlTypeID="com.balsamiq.mockups::Button" x="537" y="421" w="-1" h="-1" measuredW="112" measuredH="28" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>My%20Items%20%20%20%20%20</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

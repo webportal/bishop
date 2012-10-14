@@ -21,6 +21,7 @@
         <org.slf4j.version>1.5.8</org.slf4j.version>
         <org.log4j.version>1.2.16</org.log4j.version>
         <com.google.guava.version>10.0.1</com.google.guava.version>
+        <org.springframework.social>1.0.2.RELEASE</org.springframework.social>
     </properties>
 
   <dependencies>
@@ -56,6 +57,11 @@
           <version>${org.springframework.spring-data}</version>
       </dependency>
 
+      <dependency>
+          <groupId>org.springframework.social</groupId>
+          <artifactId>spring-social-core</artifactId>
+          <version>${org.springframework.social}</version>
+      </dependency>
       <dependency>
           <groupId>org.springframework</groupId>
           <artifactId>spring-context</artifactId>
