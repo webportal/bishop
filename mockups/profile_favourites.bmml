@@ -46,8 +46,8 @@
         </control>
         <control controlID="36" controlTypeID="com.balsamiq.mockups::Button" x="6" y="150" w="113" h="-1" measuredW="113" measuredH="28" zOrder="7" locked="false" isInGroup="41">
           <controlProperties>
-            <href>profile_favourites.bmml</href>
             <text>My%20Favourites</text>
+            <href>profile_favourites.bmml</href>
           </controlProperties>
         </control>
         <control controlID="37" controlTypeID="com.balsamiq.mockups::Button" x="6" y="183" w="115" h="-1" measuredW="115" measuredH="28" zOrder="8" locked="false" isInGroup="41">

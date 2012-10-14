@@ -37,14 +37,14 @@
       <groupChildrenDescriptors>
         <control controlID="28" controlTypeID="com.balsamiq.mockups::Button" x="0" y="0" w="113" h="-1" measuredW="113" measuredH="28" zOrder="0" locked="false" isInGroup="35">
           <controlProperties>
-            <href>profile_favourites.bmml</href>
             <text>My%20Favourites</text>
+            <href>profile_favourites.bmml</href>
           </controlProperties>
         </control>
         <control controlID="29" controlTypeID="com.balsamiq.mockups::Button" x="0" y="33" w="115" h="-1" measuredW="115" measuredH="28" zOrder="1" locked="false" isInGroup="35">
           <controlProperties>
-            <href>profile_purchases.bmml</href>
             <text>My%20Purchases%20</text>
+            <href>profile_purchases.bmml</href>
           </controlProperties>
         </control>
         <control controlID="30" controlTypeID="com.balsamiq.mockups::Button" x="0" y="69" w="111" h="-1" measuredW="111" measuredH="28" zOrder="2" locked="false" isInGroup="35">
@@ -54,14 +54,14 @@
         </control>
         <control controlID="31" controlTypeID="com.balsamiq.mockups::Button" x="0" y="106" w="112" h="-1" measuredW="112" measuredH="28" zOrder="3" locked="false" isInGroup="35">
           <controlProperties>
-            <href>profile_my_titems.bmml</href>
             <text>My%20Items%20%20%20%20%20</text>
+            <href>profile_my_titems.bmml</href>
           </controlProperties>
         </control>
         <control controlID="32" controlTypeID="com.balsamiq.mockups::Button" x="0" y="143" w="108" h="-1" measuredW="108" measuredH="28" zOrder="4" locked="false" isInGroup="35">
           <controlProperties>
-            <href>add_item.bmml</href>
             <text>Add%20item%20%20%20%20%20</text>
+            <href>add_item.bmml</href>
           </controlProperties>
         </control>
       </groupChildrenDescriptors>
