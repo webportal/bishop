@@ -8,7 +8,7 @@ public class Purchase {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public long id;
+    public int id;
 
     @ManyToOne
     private User owner;

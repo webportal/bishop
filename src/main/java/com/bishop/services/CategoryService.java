@@ -35,4 +35,18 @@ public interface CategoryService {
      */
     Category findByName(String name);
 
+
+    /**
+     *
+     * @return all categories
+     */
+    List<Category> findAll();
+
+
+    /**
+     *
+     * @return all root categories(without parent category)
+     */
+    List<Category> findAllRootCategories();
+
 }

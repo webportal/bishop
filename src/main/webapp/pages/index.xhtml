@@ -2,21 +2,23 @@
                 xmlns="http://www.w3.org/1999/xhtml"
                 xmlns:h="http://java.sun.com/jsf/html"
                 xmlns:ui="http://java.sun.com/jsf/facelets"
-                xmlns:c="http://java.sun.com/jsp/jstl/core">
+                xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://java.sun.com/jsf/core">
 
 
 
     <ui:define name="center_content">
         <h:panelGrid id="categories" columns="4" border="0" cellpadding="15" cellspacing="15">
-            <c:forEach items="#{categoriesBean.categoryImages}" var="img">
-                <h:outputLink value="http://google.com">
-                    <h:graphicImage value="#{img}" width="96" height="96"/>
-                </h:outputLink>
+            <c:forEach items="#{categoriesBean.categoriesToDisplay}" var="category">
+                <h:form>
+                    <p:commandLink update=":categories" actionListener="#{categoriesBean.getSubCategories}">
+                        <p:graphicImage value="#{category.urlToIcon}" width="96" height="96"/>
+                        <f:setPropertyActionListener value="#{category.id}" target="#{categoriesBean.selectedCategory}"/>
+                    </p:commandLink>
+                </h:form>
             </c:forEach>
-
         </h:panelGrid>
 
     </ui:define>
-
 
 </ui:composition>

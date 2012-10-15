@@ -1,6 +1,7 @@
 package com.bishop.repository;
 
 import com.bishop.domain.Category;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
@@ -19,4 +20,9 @@ public interface CategoryRepository extends CrudRepository<Category, Integer> {
      * @return category
      */
     Category findByName(String name);
+
+    List<Category> findAll();
+
+    @Query("SELECT c from Category c WHERE c.parentCategory IS null ")
+    List<Category> findAllRootCategories();
 }

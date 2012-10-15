@@ -1,9 +1,17 @@
 package com.bishop.managedBeans.index;
 
+import com.bishop.domain.Category;
+import com.bishop.services.CategoryService;
+import com.google.common.collect.Lists;
+
 import javax.annotation.PostConstruct;
+import javax.inject.Inject;
 import javax.inject.Named;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
+import java.util.logging.Logger;
 
 /**
  * Created with IntelliJ IDEA.
@@ -14,29 +22,42 @@ import java.util.List;
  */
 @Named
 public class CategoriesBean {
-    private List<String> categoryImages = new ArrayList<String>();
+    Logger logger = Logger.getLogger(CategoriesBean.class.getName());
 
-    public List<String> getCategoryImages() {
-        return categoryImages;
+    private int selectedCategory=0;
+
+    @Inject
+    private CategoryService categoryService;
+    private List<Category> categoriesToDisplay = new LinkedList<Category>();
+
+    public List<Category> getCategoriesToDisplay() {
+        return categoriesToDisplay;
     }
 
     @PostConstruct
     void init(){
-        this.categoryImages.add("/resources/images/bus.png");
-        this.categoryImages.add("/resources/images/globe.png");
-        this.categoryImages.add("/resources/images/apple.png");
-        this.categoryImages.add("/resources/images/bmw.png");
-        this.categoryImages.add("/resources/images/bear_user.png");
-        this.categoryImages.add("/resources/images/ipod_noir.png");
-        this.categoryImages.add("/resources/images/apple_tv_logo.png");
-        this.categoryImages.add("/resources/images/dvd.png");
-        this.categoryImages.add("/resources/images/documents.png");
-        this.categoryImages.add("/resources/images/fish.png");
-        this.categoryImages.add("/resources/images/help.png");
-        this.categoryImages.add("/resources/images/grumpy_bear.png");
+        this.categoriesToDisplay = categoryService.findAllRootCategories();
     }
 
-    public void setCategoryImages(List<String> categoryImages) {
-        this.categoryImages = categoryImages;
+    public void setCategoriesToDisplay(List<Category> categoriesToDisplay) {
+        this.categoriesToDisplay = categoriesToDisplay;
+    }
+
+    public void getSubCategories(){
+        logger.info("+++++ "+selectedCategory + " id were selected ++++++");
+        Category selected;
+        List<Category> categories;
+        if((selected = this.categoryService.findById(selectedCategory)) != null){
+            if((categories = selected.getSubCategories()).size()!=0){
+                this.categoriesToDisplay = selected.getSubCategories();
+            }
+        }
+    }
+    public int getSelectedCategory() {
+        return selectedCategory;
+    }
+
+    public void setSelectedCategory(int selectedCategory) {
+        this.selectedCategory = selectedCategory;
     }
 }

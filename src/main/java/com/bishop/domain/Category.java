@@ -1,5 +1,8 @@
 package com.bishop.domain;
 
+import org.springframework.data.jpa.repository.*;
+import org.springframework.data.jpa.repository.Query;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +13,7 @@ public class Category {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private int id;
 
     @Column(name = "name")
     private String name;
@@ -21,8 +24,19 @@ public class Category {
             inverseJoinColumns = @JoinColumn(name = "item_id"))
     private List<Item> items = new ArrayList<>();
 
+    @Column(name = "urlToIcon")
+    private String urlToIcon;
 
-    @OneToMany
+    public String getUrlToIcon() {
+        return urlToIcon;
+    }
+
+    public void setUrlToIcon(String urlToIcon) {
+        this.urlToIcon = urlToIcon;
+    }
+
+
+    @OneToMany(fetch = FetchType.EAGER)
     private List<Category> subCategories = new ArrayList<>();
 
     @ManyToOne
@@ -58,5 +72,12 @@ public class Category {
 
     public void setParentCategory(Category parentCategory) {
         this.parentCategory = parentCategory;
+    }
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
