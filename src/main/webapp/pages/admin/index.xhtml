@@ -1,0 +1,66 @@
+<ui:composition template="/templates/mainTemplate.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://java.sun.com/jsf/core">
+
+
+
+
+
+
+
+    <ui:define name="center_content">
+        <p:panel header="Create a new Category">
+            <p:outputLabel value="Category Name: " for="name"></p:outputLabel>
+            <p:inputText id="name"></p:inputText>   <br/><br/>
+            <p:outputLabel value="Category Icon: " for="image"></p:outputLabel>
+            <p:fileUpload fileUploadListener="fileUploader.handleFileUpload" mode="advanced" id="image"></p:fileUpload>
+        </p:panel>
+        <h:form id="form">
+            <p:dataTable value="${categoriesBean.allCategories}" var="category" id="categories">
+
+
+                <p:column>
+                    <f:facet name="header">
+                        <h:outputText value="Category Name" />
+                    </f:facet>
+                    <h:outputText value="#{category.name}" />
+                </p:column>
+
+                <p:column>
+                    <f:facet name="header">
+                        <h:outputText value="Category Image" />
+                    </f:facet>
+                    <p:graphicImage value="${category.urlToIcon}" width="64px" height="64px"></p:graphicImage>
+                </p:column>
+
+                <p:column>
+                    <f:facet name="header">
+                        <h:outputText value="Category Parent" />
+                    </f:facet>
+                    <c:if test="${not empty category.parentCategory.urlToIcon}">
+                        <p:graphicImage value="${category.parentCategory.urlToIcon}" width="64px" height="64px"></p:graphicImage>
+                    </c:if>
+
+                </p:column>
+
+                <p:column>
+                    <f:facet name="header">
+                        <h:outputText value="Remove"/>
+                    </f:facet>
+                    <p:commandLink value="Remove" update=":form:categories" action="${categoriesBean.deleteCategory}">
+                        <f:setPropertyActionListener value="#{category.id}" target="#{categoriesBean.selectedCategory}"/>
+                    </p:commandLink>
+                </p:column>
+            </p:dataTable>
+        </h:form>
+
+    </ui:define>
+
+
+
+
+
+</ui:composition>

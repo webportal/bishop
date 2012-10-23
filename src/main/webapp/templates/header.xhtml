@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+<body>
+    <ui:composition>
+        <h:link outcome="index.jsf">
+            <p:graphicImage value="/resources/images/panda1.png" width="128" height="128" style="padding:25px"></p:graphicImage>
+        </h:link>
+
+                <h:outputLink value="../public/index.jsf">
+            Public
+        </h:outputLink>   |
+        <h:outputLink value="../admin/index.jsf">
+            Admin
+        </h:outputLink>  |
+        <h:outputLink value="../public/contacts.jsf">
+            Contacts
+        </h:outputLink>
+    </ui:composition>
+</body>
+</html>

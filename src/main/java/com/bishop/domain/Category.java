@@ -31,6 +31,10 @@ public class Category {
         return urlToIcon;
     }
 
+    @OneToOne
+    @JoinColumn(name = "image_id")
+    private Image icon;
+
     public void setUrlToIcon(String urlToIcon) {
         this.urlToIcon = urlToIcon;
     }
@@ -103,5 +107,13 @@ public class Category {
 
     public void setHasChildren(boolean hasChildren) {
         this.hasChildren = hasChildren;
+    }
+
+    public Image getIcon() {
+        return icon;
+    }
+
+    public void setIcon(Image icon) {
+        this.icon = icon;
     }
 }
