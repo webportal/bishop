@@ -35,12 +35,20 @@ public class Category {
         this.urlToIcon = urlToIcon;
     }
 
-
-    @OneToMany(fetch = FetchType.EAGER)
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinTable(name = "categories_subcategories",
+               joinColumns = @JoinColumn(name = "category_id"),
+               inverseJoinColumns = @JoinColumn(name="subcategory_id"))
     private List<Category> subCategories = new ArrayList<>();
 
     @ManyToOne
     private Category parentCategory;
+
+    @Column(name = "root_category")
+    private boolean rootCategory;
+
+    @Column(name = "has_children")
+    private boolean hasChildren;
 
     public String getName() {
         return name;
@@ -79,5 +87,21 @@ public class Category {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public boolean isRootCategory() {
+        return rootCategory;
+    }
+
+    public void setRootCategory(boolean rootCategory) {
+        this.rootCategory = rootCategory;
+    }
+
+    public boolean hasChildren() {
+        return hasChildren;
+    }
+
+    public void setHasChildren(boolean hasChildren) {
+        this.hasChildren = hasChildren;
     }
 }

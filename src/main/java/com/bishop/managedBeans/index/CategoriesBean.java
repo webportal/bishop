@@ -5,8 +5,11 @@ import com.bishop.services.CategoryService;
 import com.google.common.collect.Lists;
 
 import javax.annotation.PostConstruct;
+import javax.faces.bean.RequestScoped;
+import javax.faces.bean.SessionScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
+import javax.inject.Scope;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -21,43 +24,62 @@ import java.util.logging.Logger;
  * To change this template use File | Settings | File Templates.
  */
 @Named
+@SessionScoped
 public class CategoriesBean {
     Logger logger = Logger.getLogger(CategoriesBean.class.getName());
-
-    private int selectedCategory=0;
-
     @Inject
     private CategoryService categoryService;
-    private List<Category> categoriesToDisplay = new LinkedList<Category>();
-
-    public List<Category> getCategoriesToDisplay() {
-        return categoriesToDisplay;
-    }
+    private String selectedCategory;
+    private String currentParent;
+    private List<Category> categories = new ArrayList<>();
 
     @PostConstruct
-    void init(){
-        this.categoriesToDisplay = categoryService.findAllRootCategories();
+    public void findAllRootCategories(){
+        this.setCategories(categoryService.findAllRootCategories());
+        this.setCurrentParent("NULL");
     }
 
-    public void setCategoriesToDisplay(List<Category> categoriesToDisplay) {
-        this.categoriesToDisplay = categoriesToDisplay;
+    public void findAllSubCategories(){
+        Category find = categoryService.findById(Integer.parseInt(getSelectedCategory()));
+        if(find.hasChildren()){
+            this.setCategories(categoryService.findAllSubCategories(Integer.parseInt(getSelectedCategory())));
+            this.setCurrentParent(String.valueOf(find.getId()));
+        }
+        logger.info("set current parent to "+ getCurrentParent());
     }
 
-    public void getSubCategories(){
-        logger.info("+++++ "+selectedCategory + " id were selected ++++++");
-        Category selected;
-        List<Category> categories;
-        if((selected = this.categoryService.findById(selectedCategory)) != null){
-            if((categories = selected.getSubCategories()).size()!=0){
-                this.categoriesToDisplay = selected.getSubCategories();
-            }
+    public void findAllInferiors(){
+        logger.info(getCurrentParent() + " current parent");
+        Category parent = categoryService.findById(Integer.parseInt(getCurrentParent()));
+        // if Parent is
+        if(parent.isRootCategory()){
+            this.setCategories(categoryService.findAllRootCategories());
+        }
+        else{
+            this.setCategories(categoryService.findAllSubCategories(parent.getParentCategory().getId()));
         }
     }
-    public int getSelectedCategory() {
+    public List<Category> getCategories() {
+        return categories;
+    }
+
+    public void setCategories(List<Category> categories) {
+        this.categories = categories;
+    }
+
+    public String getSelectedCategory() {
         return selectedCategory;
     }
 
-    public void setSelectedCategory(int selectedCategory) {
+    public void setSelectedCategory(String selectedCategory) {
         this.selectedCategory = selectedCategory;
+    }
+
+    public String getCurrentParent() {
+        return currentParent;
+    }
+
+    public void setCurrentParent(String currentParent) {
+        this.currentParent = currentParent;
     }
 }

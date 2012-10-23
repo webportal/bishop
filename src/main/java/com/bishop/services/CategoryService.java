@@ -49,4 +49,12 @@ public interface CategoryService {
      */
     List<Category> findAllRootCategories();
 
+
+    /**
+     *
+     * @param parentCategoryId
+     * @return all elements for the parent
+     */
+    List<Category> findAllSubCategories(int parentCategoryId);
+
 }
