@@ -1,4 +1,4 @@
-package com.bishop.managedBeans;
+package com.bishop.managedBeans.index;
 
 import com.bishop.domain.User;
 import com.bishop.services.UserService;
@@ -7,15 +7,6 @@ import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.util.List;
-
-/**
- * Created with IntelliJ IDEA.
- * User: shevchik
- * Date: 12.10.12
- * Time: 17:28
- * To change this template use File | Settings | File Templates.
- */
-
 
 @Named
 @Scope("request")

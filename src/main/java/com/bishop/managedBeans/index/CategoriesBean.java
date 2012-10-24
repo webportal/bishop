@@ -2,27 +2,14 @@ package com.bishop.managedBeans.index;
 
 import com.bishop.domain.Category;
 import com.bishop.services.CategoryService;
-import com.google.common.collect.Lists;
-
 import javax.annotation.PostConstruct;
-import javax.faces.bean.RequestScoped;
 import javax.faces.bean.SessionScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
-import javax.inject.Scope;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Queue;
 import java.util.logging.Logger;
 
-/**
- * Created with IntelliJ IDEA.
- * User: shevchik
- * Date: 14.10.12
- * Time: 19:53
- * To change this template use File | Settings | File Templates.
- */
 @Named
 @SessionScoped
 public class CategoriesBean {

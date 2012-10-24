@@ -1,13 +1,7 @@
 package com.bishop.services;
 
 import com.bishop.domain.Order;
-import java.util.List;
 
-/**
- * User: dmytro
- * Date: 10/6/12
- * Time: 4:38 PM
- */
 public interface OrderService {
 
 

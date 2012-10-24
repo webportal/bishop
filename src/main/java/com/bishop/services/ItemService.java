@@ -1,13 +1,6 @@
 package com.bishop.services;
 
 import com.bishop.domain.Item;
-import com.bishop.domain.User;
-
-/**
- * User: dmytro
- * Date: 10/6/12
- * Time: 4:16 PM
- */
 
 public interface ItemService {
 

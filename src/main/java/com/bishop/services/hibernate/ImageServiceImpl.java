@@ -11,12 +11,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-/**
- * User: dmytro
- * Date: 10/7/12
- * Time: 9:18 AM
- */
-
 @Service("imageService")
 @Repository
 @Transactional

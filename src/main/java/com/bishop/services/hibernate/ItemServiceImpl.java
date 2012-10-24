@@ -9,12 +9,6 @@ import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-/**
- * User: dmytro
- * Date: 10/7/12
- * Time: 9:29 AM
- */
-
 @Service("itemService")
 @Repository
 @Transactional

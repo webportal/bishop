@@ -2,11 +2,7 @@ package com.bishop.services;
 
 import com.bishop.domain.Category;
 import java.util.List;
-/**
- * User: dmytro
- * Date: 10/6/12
- * Time: 3:48 PM
- */
+
 public interface CategoryService {
 
     /**

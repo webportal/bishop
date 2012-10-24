@@ -1,13 +1,6 @@
 package com.bishop.services;
 
 import com.bishop.domain.Image;
-import java.util.List;
-
-/**
- * User: dmytro
- * Date: 10/6/12
- * Time: 3:59 PM
- */
 
 public interface ImageService {
 

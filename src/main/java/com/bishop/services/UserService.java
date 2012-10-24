@@ -1,14 +1,7 @@
 package com.bishop.services;
 
 import com.bishop.domain.User;
-
 import java.util.List;
-
-/**
- * User: dmytro
- * Date: 10/6/12
- * Time: 4:00 PM
- */
 
 public interface UserService {
 

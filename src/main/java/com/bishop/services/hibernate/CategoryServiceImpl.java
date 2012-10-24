@@ -10,12 +10,6 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * User: dmytro
- * Date: 10/6/12
- * Time: 10:26 PM
- */
-
 @Service("categoryService")
 @Repository
 @Transactional
