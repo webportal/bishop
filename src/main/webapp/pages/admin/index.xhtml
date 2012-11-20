@@ -12,12 +12,15 @@
 
 
     <ui:define name="center_content">
-        <p:panel header="Create a new Category">
-            <p:outputLabel value="Category Name: " for="name"></p:outputLabel>
-            <p:inputText id="name"></p:inputText>   <br/><br/>
-            <p:outputLabel value="Category Icon: " for="image"></p:outputLabel>
-            <p:fileUpload fileUploadListener="fileUploader.handleFileUpload" mode="advanced" id="image"></p:fileUpload>
-        </p:panel>
+
+         <h:form enctype="multipart/form-data">
+             <p:inputText value="name"/>
+             <p:fileUpload value="#{categoryCreator.uploadedFile}" mode="simple" id="fileUploader"/>
+             <p:commandButton value="Add new category" ajax="false" actionListener="#{categoryCreator.create}"/>
+         </h:form>
+
+
+
         <h:form id="form">
             <p:dataTable value="${categoriesBean.allCategories}" var="category" id="categories">
 

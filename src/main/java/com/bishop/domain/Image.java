@@ -3,7 +3,7 @@ package com.bishop.domain;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "images")
+@Table(name = "src/main/images")
 public class Image {
     @Id
     @Column(name = "id")

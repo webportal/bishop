@@ -1,8 +1,5 @@
 package com.bishop.domain;
 
-import org.springframework.data.jpa.repository.*;
-import org.springframework.data.jpa.repository.Query;
-
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +19,7 @@ public class Category {
     @JoinTable(name = "categories_items",
             joinColumns = @JoinColumn(name = "category_id"),
             inverseJoinColumns = @JoinColumn(name = "item_id"))
-    private List<Item> items = new ArrayList<>();
+    private List<Item> items = new ArrayList();
 
     @Column(name = "urlToIcon")
     private String urlToIcon;
@@ -43,7 +40,7 @@ public class Category {
     @JoinTable(name = "categories_subcategories",
                joinColumns = @JoinColumn(name = "category_id"),
                inverseJoinColumns = @JoinColumn(name="subcategory_id"))
-    private List<Category> subCategories = new ArrayList<>();
+    private List<Category> subCategories = new ArrayList();
 
     @ManyToOne
     private Category parentCategory;

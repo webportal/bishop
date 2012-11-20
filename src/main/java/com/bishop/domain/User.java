@@ -37,12 +37,12 @@ public class User {
 
     @OneToMany
     @JoinColumn(name = "user_id")
-    private List<Order> orders = new ArrayList<>();
+    private List<Order> orders = new ArrayList();
 
 
     @OneToMany
     @JoinColumn(name = "user_id")
-    private List<Item> items = new ArrayList<>();
+    private List<Item> items = new ArrayList();
 
 
     @OneToMany

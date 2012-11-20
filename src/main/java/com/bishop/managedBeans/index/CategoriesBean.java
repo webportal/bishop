@@ -14,12 +14,18 @@ import java.util.logging.Logger;
 @SessionScoped
 public class CategoriesBean {
     Logger logger = Logger.getLogger(CategoriesBean.class.getName());
+
     @Inject
     private CategoryService categoryService;
+
     private String selectedCategory;
+
     private String currentParent;
-    private List<Category> categories = new ArrayList<>();
-    private List<Category> allCategories = new ArrayList<>();
+
+    private List<Category> categories = new ArrayList();
+
+    private List<Category> allCategories = new ArrayList();
+
     @PostConstruct
     public void findAllRootCategories(){
         this.setCategories(categoryService.findAllRootCategories());
@@ -55,6 +61,9 @@ public class CategoriesBean {
         categoryService.deleteCategory(category);
         this.setAllCategories(categoryService.findAll());
     }
+
+    // Getters and Setters
+
     public List<Category> getCategories() {
         return categories;
     }

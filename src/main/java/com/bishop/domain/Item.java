@@ -26,7 +26,7 @@ public class Item {
     private String telephone;
 
     @OneToMany
-    private List<Image> images = new ArrayList<>();
+    private List<Image> images = new ArrayList();
 
     @ManyToMany(mappedBy = "items")
     private List<Category> category = new ArrayList<Category>();
@@ -35,11 +35,11 @@ public class Item {
     @JoinTable(name = "favourites",
             joinColumns = @JoinColumn(name = "item_id"),
             inverseJoinColumns = @JoinColumn(name = "user_id"))
-    private List<User> likedByUsers = new ArrayList<>();
+    private List<User> likedByUsers = new ArrayList();
 
 
     @ManyToMany(mappedBy = "items")
-    private List<Order> orders = new ArrayList<>();
+    private List<Order> orders = new ArrayList();
 
     public String getTitle() {
         return title;
